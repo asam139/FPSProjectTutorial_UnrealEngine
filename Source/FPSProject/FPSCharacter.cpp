@@ -38,6 +38,10 @@ void AFPSCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
     // Set up "movement" bindings.
     PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
     PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
+    
+    // Set up "look" bindings.
+    PlayerInputComponent->BindAxis("Turn", this, &AFPSCharacter::AddControllerYawInput);
+    PlayerInputComponent->BindAxis("LookUp", this, &AFPSCharacter::AddControllerPitchInput);
 }
 
 void AFPSCharacter::MoveForward(float Value)
