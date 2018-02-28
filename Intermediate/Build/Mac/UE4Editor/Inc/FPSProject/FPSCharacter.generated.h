@@ -15,6 +15,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execStopJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StopJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStartJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StartJump(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execMoveRight) \
 	{ \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
@@ -35,6 +51,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execStopJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StopJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStartJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StartJump(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execMoveRight) \
 	{ \
