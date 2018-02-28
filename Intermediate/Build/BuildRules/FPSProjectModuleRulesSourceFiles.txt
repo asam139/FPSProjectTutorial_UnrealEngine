@@ -1,0 +1,3 @@
+/Users/Sau/Documents/Unreal Projects/FPSProject/Source/FPSProject/FPSProject.Build.cs
+/Users/Sau/Documents/Unreal Projects/FPSProject/Source/FPSProject.Target.cs
+/Users/Sau/Documents/Unreal Projects/FPSProject/Source/FPSProjectEditor.Target.cs

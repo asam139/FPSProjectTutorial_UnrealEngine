@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/Users/Sau/Documents/Unreal Projects/FPSProject/.vscode": true,
+		"/Users/Sau/Documents/Unreal Projects/FPSProject/Content": true,
+		"/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.xcworkspace": true,
+		"/Users/Sau/Documents/Unreal Projects/FPSProject/Intermediate": true,
+		"/Users/Sau/Documents/Unreal Projects/FPSProject/Saved": true
+	}
+}

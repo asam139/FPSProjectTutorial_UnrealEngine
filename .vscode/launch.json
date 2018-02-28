@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "FPSProject (Debug)",
+			"request": "launch",
+			"preLaunchTask": "FPSProject Mac Debug Build",
+			"program": "/Users/Sau/Documents/Unreal Projects/FPSProject/Binaries/Mac/FPSProject-Mac-Debug.app/Contents/MacOS/FPSProject-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProject (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "FPSProject Mac DebugGame Build",
+			"program": "/Users/Sau/Documents/Unreal Projects/FPSProject/Binaries/Mac/FPSProject-Mac-DebugGame.app/Contents/MacOS/FPSProject-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProject (Development)",
+			"request": "launch",
+			"preLaunchTask": "FPSProject Mac Development Build",
+			"program": "/Users/Sau/Documents/Unreal Projects/FPSProject/Binaries/Mac/FPSProject.app/Contents/MacOS/FPSProject",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProject (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "FPSProject Mac Shipping Build",
+			"program": "/Users/Sau/Documents/Unreal Projects/FPSProject/Binaries/Mac/FPSProject-Mac-Shipping.app/Contents/MacOS/FPSProject-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProject (Test)",
+			"request": "launch",
+			"preLaunchTask": "FPSProject Mac Test Build",
+			"program": "/Users/Sau/Documents/Unreal Projects/FPSProject/Binaries/Mac/FPSProject-Mac-Test.app/Contents/MacOS/FPSProject-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProjectEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "FPSProjectEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProjectEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "FPSProjectEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "FPSProjectEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "FPSProjectEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.19"
+		}
+	]
+}

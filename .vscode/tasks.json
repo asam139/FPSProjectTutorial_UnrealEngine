@@ -1,0 +1,995 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "FPSProject Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"Mac",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"IOS",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Shipping",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProject HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProject HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProject",
+				"HTML5",
+				"Test",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProjectEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"Debug",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProjectEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"DebugGame",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FPSProjectEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "FPSProjectEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"FPSProjectEditor",
+				"Mac",
+				"Development",
+				"'/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		}
+	]
+}
