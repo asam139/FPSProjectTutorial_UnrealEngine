@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UE4_Index.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -17,12 +22,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58837DB0EF07A3960D7C575A</key>
+		<key>4D1AF8D11B153744820C39E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D1AF8D11B153744820C39E6</key>
+		<key>58837DB0EF07A3960D7C575A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

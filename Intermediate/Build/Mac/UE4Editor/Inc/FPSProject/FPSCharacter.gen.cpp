@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_StartJump();
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_StopJump();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
@@ -139,6 +140,18 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				{ "ModuleRelativePath", "FPSCharacter.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FPSCameraComponent_MetaData[] = {
+				{ "Category", "FPSCharacter" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+				{ "ToolTip", "FPS camera." },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FPSCameraComponent = { UE4CodeGen_Private::EPropertyClass::Object, "FPSCameraComponent", RF_Public|RF_Transient|RF_MarkAsNative, 0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AFPSCharacter, FPSCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(NewProp_FPSCameraComponent_MetaData, ARRAY_COUNT(NewProp_FPSCameraComponent_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FPSCameraComponent,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<AFPSCharacter>::IsAbstract,
 			};
@@ -147,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
 				FuncInfo, ARRAY_COUNT(FuncInfo),
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -157,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 1700548703);
+	IMPLEMENT_CLASS(AFPSCharacter, 3089837206);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFPSCharacter(Z_Construct_UClass_AFPSCharacter, &AFPSCharacter::StaticClass, TEXT("/Script/FPSProject"), TEXT("AFPSCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFPSCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

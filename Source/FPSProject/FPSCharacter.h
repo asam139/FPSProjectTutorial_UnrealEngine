@@ -6,26 +6,29 @@
 #include "GameFramework/Character.h"
 #include "FPSCharacter.generated.h"
 
+class UCameraComponent;
+class UCapsuleComponent;
+
 UCLASS()
 class FPSPROJECT_API AFPSCharacter : public ACharacter
 {
-	GENERATED_BODY()
-
+    GENERATED_BODY()
+    
 public:
-	// Sets default values for this character's properties
-	AFPSCharacter();
-
+    // Sets default values for this character's properties
+    AFPSCharacter();
+    
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
+    
+public:
+    // Called every frame
+    virtual void Tick( float DeltaSeconds ) override;
+    
+    // Called to bind functionality to input
+    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    
     // Handles input for moving forward and backward.
     UFUNCTION()
     void MoveForward(float Value);
@@ -41,4 +44,8 @@ public:
     // Clears jump flag when key is released.
     UFUNCTION()
     void StopJump();
+    
+    // FPS camera.
+    UPROPERTY(VisibleAnywhere)
+    UCameraComponent* FPSCameraComponent;
 };
