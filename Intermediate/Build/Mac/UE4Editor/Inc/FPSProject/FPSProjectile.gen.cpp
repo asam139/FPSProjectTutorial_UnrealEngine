@@ -17,11 +17,72 @@ void EmptyLinkFunctionForGeneratedCodeFPSProjectile() {}
 	FPSPROJECT_API UClass* Z_Construct_UClass_AFPSProjectile();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_FPSProject();
+	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSProjectile_OnHit();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 // End Cross Module References
 	void AFPSProjectile::StaticRegisterNativesAFPSProjectile()
 	{
+		UClass* Class = AFPSProjectile::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnHit", &AFPSProjectile::execOnHit },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_AFPSProjectile_OnHit()
+	{
+		struct FPSProjectile_eventOnHit_Parms
+		{
+			UPrimitiveComponent* HitComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComponent;
+			FVector NormalImpulse;
+			FHitResult Hit;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[] = {
+				{ "NativeConst", "" },
+			};
+#endif
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_Hit = { UE4CodeGen_Private::EPropertyClass::Struct, "Hit", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FPSProjectile_eventOnHit_Parms, Hit), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(NewProp_Hit_MetaData, ARRAY_COUNT(NewProp_Hit_MetaData)) };
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_NormalImpulse = { UE4CodeGen_Private::EPropertyClass::Struct, "NormalImpulse", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FPSProjectile_eventOnHit_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComponent_MetaData[] = {
+				{ "EditInline", "true" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComponent = { UE4CodeGen_Private::EPropertyClass::Object, "OtherComponent", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FPSProjectile_eventOnHit_Parms, OtherComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(NewProp_OtherComponent_MetaData, ARRAY_COUNT(NewProp_OtherComponent_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor = { UE4CodeGen_Private::EPropertyClass::Object, "OtherActor", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FPSProjectile_eventOnHit_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitComponent_MetaData[] = {
+				{ "EditInline", "true" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitComponent = { UE4CodeGen_Private::EPropertyClass::Object, "HitComponent", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FPSProjectile_eventOnHit_Parms, HitComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(NewProp_HitComponent_MetaData, ARRAY_COUNT(NewProp_HitComponent_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Hit,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_NormalImpulse,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherComponent,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherActor,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_HitComponent,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSProjectile.h" },
+				{ "ToolTip", "Function that is called when the projectile hits something." },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSProjectile, "OnHit", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00C20401, sizeof(FPSProjectile_eventOnHit_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AFPSProjectile_NoRegister()
 	{
@@ -35,6 +96,9 @@ void EmptyLinkFunctionForGeneratedCodeFPSProjectile() {}
 			static UObject* (*const DependentSingletons[])() = {
 				(UObject* (*)())Z_Construct_UClass_AActor,
 				(UObject* (*)())Z_Construct_UPackage__Script_FPSProject,
+			};
+			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_AFPSProjectile_OnHit, "OnHit" }, // 3933877711
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -71,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSProjectile() {}
 				&AFPSProjectile::StaticClass,
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
-				nullptr, 0,
+				FuncInfo, ARRAY_COUNT(FuncInfo),
 				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
@@ -82,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFPSProjectile, 1489578959);
+	IMPLEMENT_CLASS(AFPSProjectile, 2686369552);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFPSProjectile(Z_Construct_UClass_AFPSProjectile, &AFPSProjectile::StaticClass, TEXT("/Script/FPSProject"), TEXT("AFPSProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFPSProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

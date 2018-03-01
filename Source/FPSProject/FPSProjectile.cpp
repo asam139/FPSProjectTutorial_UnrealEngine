@@ -13,6 +13,7 @@ AFPSProjectile::AFPSProjectile()
     // Use a sphere as a simple collision representation.
     CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
     CollisionComponent->BodyInstance.SetCollisionProfileName(TEXT("Projectile"));
+    CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnHit);
     
     // Set the sphere's collision radius.
     CollisionComponent->InitSphereRadius(15.0f);
@@ -50,5 +51,14 @@ void AFPSProjectile::Tick(float DeltaTime)
 void AFPSProjectile::FireInDirection(const FVector& ShootDirection)
 {
     ProjectileMovementComponent->Velocity = ShootDirection * ProjectileMovementComponent->InitialSpeed;
+}
+
+// Function that is called when the projectile hits something.
+void AFPSProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
+{
+    if (OtherActor != this && OtherComponent->IsSimulatingPhysics())
+    {
+        OtherComponent->AddImpulseAtLocation(ProjectileMovementComponent->Velocity * 100.0f, Hit.ImpactPoint);
+    }
 }
 
