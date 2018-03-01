@@ -45,6 +45,10 @@ public:
     UFUNCTION()
     void StopJump();
     
+    // Function that handles firing projectiles.
+    UFUNCTION()
+    void Fire();
+    
     // FPS camera.
     UPROPERTY(VisibleAnywhere)
     UCameraComponent* FPSCameraComponent;
@@ -52,4 +56,12 @@ public:
     // First-person mesh (arms), visible only to the owning player.
     UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
     USkeletalMeshComponent* FPSMesh;
+    
+    // Gun muzzle's offset from the camera location.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+    FVector MuzzleOffset;
+    
+    // Projectile class to spawn.
+    UPROPERTY(EditDefaultsOnly, Category = Projectile)
+    TSubclassOf<class AFPSProjectile> ProjectileClass;
 };

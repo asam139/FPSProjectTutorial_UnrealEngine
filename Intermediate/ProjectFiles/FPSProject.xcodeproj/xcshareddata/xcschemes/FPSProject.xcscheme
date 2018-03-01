@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B7A374619FDEFDA8B1F912B"
+               BlueprintIdentifier = "C7967356EE9CC5667D3C6741"
                BuildableName = "FPSProject.app"
                BlueprintName = "FPSProject"
                ReferencedContainer = "container:FPSProject.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B7A374619FDEFDA8B1F912B"
+               BlueprintIdentifier = "C7967356EE9CC5667D3C6741"
                BuildableName = "FPSProject.app"
                BlueprintName = "FPSProject"
                ReferencedContainer = "container:FPSProject.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B7A374619FDEFDA8B1F912B"
+               BlueprintIdentifier = "C7967356EE9CC5667D3C6741"
                BuildableName = "FPSProject.app"
                BlueprintName = "FPSProject"
                ReferencedContainer = "container:FPSProject.xcodeproj">
@@ -84,7 +84,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B7A374619FDEFDA8B1F912B"
+               BlueprintIdentifier = "C7967356EE9CC5667D3C6741"
                BuildableName = "FPSProject.app"
                BlueprintName = "FPSProject"
                ReferencedContainer = "container:FPSProject.xcodeproj">

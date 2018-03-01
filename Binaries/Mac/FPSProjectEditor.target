@@ -16,11 +16,11 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Mac/UE4Editor-FPSProject-4717.dylib",
+			"Path": "$(ProjectDir)/Binaries/Mac/UE4Editor-FPSProject-4507.dylib",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Mac/UE4Editor-FPSProject-4717.dSYM",
+			"Path": "$(ProjectDir)/Binaries/Mac/UE4Editor-FPSProject-4507.dSYM",
 			"Type": "SymbolFile"
 		},
 		{

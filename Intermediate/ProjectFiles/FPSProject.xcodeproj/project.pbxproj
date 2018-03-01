@@ -14,13 +14,16 @@
 		1CA02256E208777020EF3683 /* DefaultEditorSettings.ini in Sources */ = {isa = PBXBuildFile; fileRef = 5873D72E80F5FC38B15BAE4B /* DefaultEditorSettings.ini */; };
 		2C4E399CAD3837ECD0F8CBD6 /* DefaultEngine.ini in Sources */ = {isa = PBXBuildFile; fileRef = 4E6FC01DBECF6EAFE3EBE34A /* DefaultEngine.ini */; };
 		24EDCC7DA8ED33C0F2D72993 /* DefaultGame.ini in Sources */ = {isa = PBXBuildFile; fileRef = CEDBC2E8B849B360A801E011 /* DefaultGame.ini */; };
-		10C01CA0A52680E10F45C7AC /* FPSCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A1ED88A90673DF02BDE572 /* FPSCharacter.cpp */; };
-		B91FB4801C93428D3DC8DC03 /* FPSCharacter.h in Sources */ = {isa = PBXBuildFile; fileRef = 7B48928D4D81103ECEAF559A /* FPSCharacter.h */; };
-		52F3C98211FD5553DAA9E785 /* FPSProject.Build.cs in Sources */ = {isa = PBXBuildFile; fileRef = 7100C47C023A6F8DC5EA0C61 /* FPSProject.Build.cs */; };
-		74E69180ACA6A40ACA192D29 /* FPSProject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C07C3F728828D2600C1B4D /* FPSProject.cpp */; };
-		BD943C9440C7D567E6680D2B /* FPSProject.h in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4A63405DDBB58D29AB242 /* FPSProject.h */; };
-		BE2F1A3CC13A0067CA44C217 /* FPSProjectGameModeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A0FC90343C64361B250D39E /* FPSProjectGameModeBase.cpp */; };
-		E1F4CC8351C37B23E2F9D610 /* FPSProjectGameModeBase.h in Sources */ = {isa = PBXBuildFile; fileRef = AD99A5AB68A66127118FC9F5 /* FPSProjectGameModeBase.h */; };
+		34DF79E2EDFE67416BEF77BF /* DefaultInput.ini in Sources */ = {isa = PBXBuildFile; fileRef = 6BB943E2C40AE476452D4EE3 /* DefaultInput.ini */; };
+		B91FB4801C93428D3DC8DC03 /* FPSCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B48928D4D81103ECEAF559A /* FPSCharacter.cpp */; };
+		52F3C98211FD5553DAA9E785 /* FPSCharacter.h in Sources */ = {isa = PBXBuildFile; fileRef = 7100C47C023A6F8DC5EA0C61 /* FPSCharacter.h */; };
+		74E69180ACA6A40ACA192D29 /* FPSProject.Build.cs in Sources */ = {isa = PBXBuildFile; fileRef = C9C07C3F728828D2600C1B4D /* FPSProject.Build.cs */; };
+		BD943C9440C7D567E6680D2B /* FPSProject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4A63405DDBB58D29AB242 /* FPSProject.cpp */; };
+		BE2F1A3CC13A0067CA44C217 /* FPSProject.h in Sources */ = {isa = PBXBuildFile; fileRef = 6A0FC90343C64361B250D39E /* FPSProject.h */; };
+		E1F4CC8351C37B23E2F9D610 /* FPSProjectGameModeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD99A5AB68A66127118FC9F5 /* FPSProjectGameModeBase.cpp */; };
+		13B7140C57518F6D5C7C5ACD /* FPSProjectGameModeBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D1606C99F347039B956AA /* FPSProjectGameModeBase.h */; };
+		2097F80CEFAB8C522AD76F99 /* FPSProjectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE6FCB916969B4313ED83EEB /* FPSProjectile.cpp */; };
+		905A5E715A58BC5A616AECBF /* FPSProjectile.h in Sources */ = {isa = PBXBuildFile; fileRef = 58837DB0EF07A3960D7C575A /* FPSProjectile.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,62 +34,66 @@
 		5873D72E80F5FC38B15BAE4B /* DefaultEditorSettings.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultEditorSettings.ini"; path = "../../Config/DefaultEditorSettings.ini"; sourceTree = SOURCE_ROOT; };
 		4E6FC01DBECF6EAFE3EBE34A /* DefaultEngine.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultEngine.ini"; path = "../../Config/DefaultEngine.ini"; sourceTree = SOURCE_ROOT; };
 		CEDBC2E8B849B360A801E011 /* DefaultGame.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultGame.ini"; path = "../../Config/DefaultGame.ini"; sourceTree = SOURCE_ROOT; };
-		55A1ED88A90673DF02BDE572 /* FPSCharacter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSCharacter.cpp"; path = "../../Source/FPSProject/FPSCharacter.cpp"; sourceTree = SOURCE_ROOT; };
-		7B48928D4D81103ECEAF559A /* FPSCharacter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSCharacter.h"; path = "../../Source/FPSProject/FPSCharacter.h"; sourceTree = SOURCE_ROOT; };
-		7100C47C023A6F8DC5EA0C61 /* FPSProject.Build.cs */ = {isa = PBXFileReference; explicitFileType = file.text; name = "FPSProject.Build.cs"; path = "../../Source/FPSProject/FPSProject.Build.cs"; sourceTree = SOURCE_ROOT; };
-		C9C07C3F728828D2600C1B4D /* FPSProject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSProject.cpp"; path = "../../Source/FPSProject/FPSProject.cpp"; sourceTree = SOURCE_ROOT; };
-		6CD4A63405DDBB58D29AB242 /* FPSProject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSProject.h"; path = "../../Source/FPSProject/FPSProject.h"; sourceTree = SOURCE_ROOT; };
-		6A0FC90343C64361B250D39E /* FPSProjectGameModeBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSProjectGameModeBase.cpp"; path = "../../Source/FPSProject/FPSProjectGameModeBase.cpp"; sourceTree = SOURCE_ROOT; };
-		AD99A5AB68A66127118FC9F5 /* FPSProjectGameModeBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSProjectGameModeBase.h"; path = "../../Source/FPSProject/FPSProjectGameModeBase.h"; sourceTree = SOURCE_ROOT; };
-		2F1AF6E719D6E109500944BA /* FPSProject */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = FPSProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB943E2C40AE476452D4EE3 /* DefaultInput.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultInput.ini"; path = "../../Config/DefaultInput.ini"; sourceTree = SOURCE_ROOT; };
+		7B48928D4D81103ECEAF559A /* FPSCharacter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSCharacter.cpp"; path = "../../Source/FPSProject/FPSCharacter.cpp"; sourceTree = SOURCE_ROOT; };
+		7100C47C023A6F8DC5EA0C61 /* FPSCharacter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSCharacter.h"; path = "../../Source/FPSProject/FPSCharacter.h"; sourceTree = SOURCE_ROOT; };
+		C9C07C3F728828D2600C1B4D /* FPSProject.Build.cs */ = {isa = PBXFileReference; explicitFileType = file.text; name = "FPSProject.Build.cs"; path = "../../Source/FPSProject/FPSProject.Build.cs"; sourceTree = SOURCE_ROOT; };
+		6CD4A63405DDBB58D29AB242 /* FPSProject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSProject.cpp"; path = "../../Source/FPSProject/FPSProject.cpp"; sourceTree = SOURCE_ROOT; };
+		6A0FC90343C64361B250D39E /* FPSProject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSProject.h"; path = "../../Source/FPSProject/FPSProject.h"; sourceTree = SOURCE_ROOT; };
+		AD99A5AB68A66127118FC9F5 /* FPSProjectGameModeBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSProjectGameModeBase.cpp"; path = "../../Source/FPSProject/FPSProjectGameModeBase.cpp"; sourceTree = SOURCE_ROOT; };
+		6D7D1606C99F347039B956AA /* FPSProjectGameModeBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSProjectGameModeBase.h"; path = "../../Source/FPSProject/FPSProjectGameModeBase.h"; sourceTree = SOURCE_ROOT; };
+		AE6FCB916969B4313ED83EEB /* FPSProjectile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "FPSProjectile.cpp"; path = "../../Source/FPSProject/FPSProjectile.cpp"; sourceTree = SOURCE_ROOT; };
+		58837DB0EF07A3960D7C575A /* FPSProjectile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "FPSProjectile.h"; path = "../../Source/FPSProject/FPSProjectile.h"; sourceTree = SOURCE_ROOT; };
+		DF9C5F6A22AC6262874C01DC /* FPSProject */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = FPSProject; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AF693ACD35BDFB168A3D87BC = {
+		EFD148C11CF8B20C3EDE77CC = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C01CA0A52680E10F45C7AC /* FPSCharacter.cpp in Sources */,
-				74E69180ACA6A40ACA192D29 /* FPSProject.cpp in Sources */,
-				BE2F1A3CC13A0067CA44C217 /* FPSProjectGameModeBase.cpp in Sources */,
+				B91FB4801C93428D3DC8DC03 /* FPSCharacter.cpp in Sources */,
+				BD943C9440C7D567E6680D2B /* FPSProject.cpp in Sources */,
+				E1F4CC8351C37B23E2F9D610 /* FPSProjectGameModeBase.cpp in Sources */,
+				2097F80CEFAB8C522AD76F99 /* FPSProjectile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXContainerItemProxy section */
-		FD401F1F7FD3238E689BE1B0 /* PBXContainerItemProxy */ = {
+		638B1AB444DD3CD2F23D8E06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 638B1AB444DD3CD2F23D8E06 /* Project object */;
+			containerPortal = FE44394A18E959C42BBEBEFF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0F597E111F2BF8D1DDD29F5E;
+			remoteGlobalIDString = 2C88C46E690AC6EAF9C9F8E6;
 			remoteInfo = "FPSProject_Build";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXTargetDependency section */
-		025EED965B79006532537CFF /* PBXTargetDependency */ = {
+		54116F3CA20FD35C7A981F82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0F597E111F2BF8D1DDD29F5E /* FPSProject_Build */;
-			targetProxy = FD401F1F7FD3238E689BE1B0 /* PBXContainerItemProxy */;
+			target = 2C88C46E690AC6EAF9C9F8E6 /* FPSProject_Build */;
+			targetProxy = 638B1AB444DD3CD2F23D8E06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXGroup section */
-		2C88C46E690AC6EAF9C9F8E6 = {
+		D34BA1DE5B4661355613CFF1 = {
 			isa = PBXGroup;
 			children = (
-				CE3E28506AD33A7B69F48EF0 /* Source */,
-				9DE91AC32392ED63F10A24E7 /* Config */,
+				C8D8264A718C165650656881 /* Source */,
+				A6466C85413AAF0CE11C017B /* Config */,
 				10E4841AB4578BB4EF66F8B7 /* FPSProject.uproject */,
-				57FBAE1E283C331783685C05 /* Products */,
+				83B1FDA0E4C3915A0F6A187D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE3E28506AD33A7B69F48EF0 = {
+		C8D8264A718C165650656881 = {
 			isa = PBXGroup;
 			children = (
-				62BCC0797442A3C5762BFEC9 /* FPSProject */,
+				9F71460792FA70C07C469480 /* FPSProject */,
 				940AC694D607EE88F16DFF10 /* FPSProject.Target.cs */,
 				6EF1EB4E659A8BF798C986A9 /* FPSProjectEditor.Target.cs */,
 			);
@@ -94,37 +101,40 @@
 			path = "Source";
 			sourceTree = "<group>";
 		};
-		62BCC0797442A3C5762BFEC9 = {
+		9F71460792FA70C07C469480 = {
 			isa = PBXGroup;
 			children = (
-				55A1ED88A90673DF02BDE572 /* FPSCharacter.cpp */,
-				7B48928D4D81103ECEAF559A /* FPSCharacter.h */,
-				7100C47C023A6F8DC5EA0C61 /* FPSProject.Build.cs */,
-				C9C07C3F728828D2600C1B4D /* FPSProject.cpp */,
-				6CD4A63405DDBB58D29AB242 /* FPSProject.h */,
-				6A0FC90343C64361B250D39E /* FPSProjectGameModeBase.cpp */,
-				AD99A5AB68A66127118FC9F5 /* FPSProjectGameModeBase.h */,
+				7B48928D4D81103ECEAF559A /* FPSCharacter.cpp */,
+				7100C47C023A6F8DC5EA0C61 /* FPSCharacter.h */,
+				C9C07C3F728828D2600C1B4D /* FPSProject.Build.cs */,
+				6CD4A63405DDBB58D29AB242 /* FPSProject.cpp */,
+				6A0FC90343C64361B250D39E /* FPSProject.h */,
+				AD99A5AB68A66127118FC9F5 /* FPSProjectGameModeBase.cpp */,
+				6D7D1606C99F347039B956AA /* FPSProjectGameModeBase.h */,
+				AE6FCB916969B4313ED83EEB /* FPSProjectile.cpp */,
+				58837DB0EF07A3960D7C575A /* FPSProjectile.h */,
 			);
 			name = "FPSProject";
 			path = "Source/FPSProject";
 			sourceTree = "<group>";
 		};
-		9DE91AC32392ED63F10A24E7 = {
+		A6466C85413AAF0CE11C017B = {
 			isa = PBXGroup;
 			children = (
 				9F1A6E3CBDFC1C4D72A426E5 /* DefaultEditor.ini */,
 				5873D72E80F5FC38B15BAE4B /* DefaultEditorSettings.ini */,
 				4E6FC01DBECF6EAFE3EBE34A /* DefaultEngine.ini */,
 				CEDBC2E8B849B360A801E011 /* DefaultGame.ini */,
+				6BB943E2C40AE476452D4EE3 /* DefaultInput.ini */,
 			);
 			name = "Config";
 			path = "Config";
 			sourceTree = "<group>";
 		};
-		57FBAE1E283C331783685C05 /* Products */ = {
+		83B1FDA0E4C3915A0F6A187D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F1AF6E719D6E109500944BA /* FPSProject */,
+				DF9C5F6A22AC6262874C01DC /* FPSProject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,10 +142,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		0F597E111F2BF8D1DDD29F5E /* FPSProject_Build */ = {
+		2C88C46E690AC6EAF9C9F8E6 /* FPSProject_Build */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) $(UE_BUILD_TARGET_NAME) $(PLATFORM_NAME) $(UE_BUILD_TARGET_CONFIG) \"/Users/Sau/Documents/Unreal Projects/FPSProject/FPSProject.uproject\" -buildscw";
-			buildConfigurationList = C7967356EE9CC5667D3C6741 /* Build configuration list for PBXLegacyTarget "FPSProject_Build" */;
+			buildConfigurationList = 57FBAE1E283C331783685C05 /* Build configuration list for PBXLegacyTarget "FPSProject_Build" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Users/Shared/Epic Games/UE_4.19/Engine/Build/BatchFiles/Mac/Build.sh";
@@ -149,28 +159,28 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		1B7A374619FDEFDA8B1F912B /* FPSProject */ = {
+		C7967356EE9CC5667D3C6741 /* FPSProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2459D29D9EE7B5F329122A2D /* Build configuration list for PBXNativeTarget "FPSProject" */;
+			buildConfigurationList = 82184C5B7172AFF3FB650F26 /* Build configuration list for PBXNativeTarget "FPSProject" */;
 			buildPhases = (
 			);
 			dependencies = (
-				025EED965B79006532537CFF /* PBXTargetDependency */,
+				54116F3CA20FD35C7A981F82 /* PBXTargetDependency */,
 			);
 			name = "FPSProject";
 			passBuildSettingsInEnvironment = 1;
 			productName = "FPSProject";
-			productReference = "2F1AF6E719D6E109500944BA";
+			productReference = "DF9C5F6A22AC6262874C01DC";
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXNativeTarget section */
-		82184C5B7172AFF3FB650F26 /* FPSProject_Index */ = {
+		AF693ACD35BDFB168A3D87BC /* FPSProject_Index */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54116F3CA20FD35C7A981F82 /* Build configuration list for PBXNativeTarget "FPSProject_Index" */;
+			buildConfigurationList = 19CE69E876A40D16A3791226 /* Build configuration list for PBXNativeTarget "FPSProject_Index" */;
 			buildPhases = (
-				AF693ACD35BDFB168A3D87BC /* Sources */,
+				EFD148C11CF8B20C3EDE77CC /* Sources */,
 			);
 			dependencies = (
 			);
@@ -182,38 +192,38 @@
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		638B1AB444DD3CD2F23D8E06 /* Project object */ = {
+		FE44394A18E959C42BBEBEFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Epic Games, Inc.";
 				TargetAttributes = {
-					1B7A374619FDEFDA8B1F912B = {
+					C7967356EE9CC5667D3C6741 = {
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = DF9C5F6A22AC6262874C01DC /* Build configuration list for PBXProject "FPSProject" */;
+			buildConfigurationList = D0F8B43CCDE25C1974F1055A /* Build configuration list for PBXProject "FPSProject" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en
 			);
-			mainGroup = 2C88C46E690AC6EAF9C9F8E6;
-			productRefGroup = 57FBAE1E283C331783685C05;
+			mainGroup = D34BA1DE5B4661355613CFF1;
+			productRefGroup = 83B1FDA0E4C3915A0F6A187D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-			1B7A374619FDEFDA8B1F912B /* FPSProject */,
-			0F597E111F2BF8D1DDD29F5E /* FPSProject_Build */,
-			82184C5B7172AFF3FB650F26 /* FPSProject_Index */,
+			C7967356EE9CC5667D3C6741 /* FPSProject */,
+			2C88C46E690AC6EAF9C9F8E6 /* FPSProject_Build */,
+			AF693ACD35BDFB168A3D87BC /* FPSProject_Index */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		19CE69E876A40D16A3791226 /* "DebugGame" */ = {
+		487B68E45D89A8BC28C3B81C /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -745,7 +755,7 @@
 			};
 			name = "DebugGame";
 		};
-		83B1FDA0E4C3915A0F6A187D /* "DebugGame Editor" */ = {
+		C200AB93930D99258BDFE6BD /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1277,7 +1287,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		FEA0195E61C3B2A43A305869 /* "Development" */ = {
+		FFEF1C044928FCF6A9F6E5CE /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1809,7 +1819,7 @@
 			};
 			name = "Development";
 		};
-		AEC5A8D8CEC270D1C3B89B60 /* "Development Editor" */ = {
+		DC130CB0465EC704A32A0293 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2341,7 +2351,7 @@
 			};
 			name = "Development Editor";
 		};
-		02B61C31EFDBEE6EAE31D8DE /* "Shipping" */ = {
+		9DE91AC32392ED63F10A24E7 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2873,7 +2883,7 @@
 			};
 			name = "Shipping";
 		};
-		FE44394A18E959C42BBEBEFF /* "DebugGame" */ = {
+		E4BC35B160AB4B693323EF89 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2901,7 +2911,7 @@
 			};
 			name = "DebugGame";
 		};
-		EFD148C11CF8B20C3EDE77CC /* "DebugGame Editor" */ = {
+		6F4A5B651013E2B364CC57B4 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2916,7 +2926,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		5AACFC86C15B542C182CDC60 /* "Development" */ = {
+		65C156C96E14F9B7AFFB4CF1 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2944,7 +2954,7 @@
 			};
 			name = "Development";
 		};
-		181F112C9732DD7BC53F1676 /* "Development Editor" */ = {
+		0CCB07CD07761F34E8782202 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2959,7 +2969,7 @@
 			};
 			name = "Development Editor";
 		};
-		A66B889ABBA4B6213A43C6D6 /* "Shipping" */ = {
+		62BCC0797442A3C5762BFEC9 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2987,7 +2997,7 @@
 			};
 			name = "Shipping";
 		};
-		D0F8B43CCDE25C1974F1055A /* "DebugGame" */ = {
+		FEA0195E61C3B2A43A305869 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2997,7 +3007,7 @@
 			};
 			name = "DebugGame";
 		};
-		487B68E45D89A8BC28C3B81C /* "DebugGame Editor" */ = {
+		AEC5A8D8CEC270D1C3B89B60 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -3007,7 +3017,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		C200AB93930D99258BDFE6BD /* "Development" */ = {
+		02B61C31EFDBEE6EAE31D8DE /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3017,7 +3027,7 @@
 			};
 			name = "Development";
 		};
-		FFEF1C044928FCF6A9F6E5CE /* "Development Editor" */ = {
+		8C5EFC0A442AB6BFEF4655DB /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -3027,7 +3037,7 @@
 			};
 			name = "Development Editor";
 		};
-		DC130CB0465EC704A32A0293 /* "Shipping" */ = {
+		4DCEC9143DA79897D00C6C5A /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3037,7 +3047,7 @@
 			};
 			name = "Shipping";
 		};
-		D34BA1DE5B4661355613CFF1 /* "DebugGame" */ = {
+		5AACFC86C15B542C182CDC60 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3065,7 +3075,7 @@
 			};
 			name = "DebugGame";
 		};
-		E4BC35B160AB4B693323EF89 /* "DebugGame Editor" */ = {
+		181F112C9732DD7BC53F1676 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -3080,7 +3090,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		6F4A5B651013E2B364CC57B4 /* "Development" */ = {
+		A66B889ABBA4B6213A43C6D6 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3108,7 +3118,7 @@
 			};
 			name = "Development";
 		};
-		65C156C96E14F9B7AFFB4CF1 /* "Development Editor" */ = {
+		CE3E28506AD33A7B69F48EF0 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -3123,7 +3133,7 @@
 			};
 			name = "Development Editor";
 		};
-		0CCB07CD07761F34E8782202 /* "Shipping" */ = {
+		10F29B5D59F1EAC41941EDAD /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3154,55 +3164,55 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF9C5F6A22AC6262874C01DC /* Build configuration list for PBXProject "FPSProject" */ = {
+		D0F8B43CCDE25C1974F1055A /* Build configuration list for PBXProject "FPSProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19CE69E876A40D16A3791226 /* "DebugGame" */,
-				83B1FDA0E4C3915A0F6A187D /* "DebugGame Editor" */,
-				FEA0195E61C3B2A43A305869 /* "Development" */,
-				AEC5A8D8CEC270D1C3B89B60 /* "Development Editor" */,
-				02B61C31EFDBEE6EAE31D8DE /* "Shipping" */,
+				487B68E45D89A8BC28C3B81C /* "DebugGame" */,
+				C200AB93930D99258BDFE6BD /* "DebugGame Editor" */,
+				FFEF1C044928FCF6A9F6E5CE /* "Development" */,
+				DC130CB0465EC704A32A0293 /* "Development Editor" */,
+				9DE91AC32392ED63F10A24E7 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		C7967356EE9CC5667D3C6741 /* Build configuration list for PBXLegacyTarget "FPSProject_Build" */ = {
+		57FBAE1E283C331783685C05 /* Build configuration list for PBXLegacyTarget "FPSProject_Build" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0F8B43CCDE25C1974F1055A /* "DebugGame" */,
-				487B68E45D89A8BC28C3B81C /* "DebugGame Editor" */,
-				C200AB93930D99258BDFE6BD /* "Development" */,
-				FFEF1C044928FCF6A9F6E5CE /* "Development Editor" */,
-				DC130CB0465EC704A32A0293 /* "Shipping" */,
+				FEA0195E61C3B2A43A305869 /* "DebugGame" */,
+				AEC5A8D8CEC270D1C3B89B60 /* "DebugGame Editor" */,
+				02B61C31EFDBEE6EAE31D8DE /* "Development" */,
+				8C5EFC0A442AB6BFEF4655DB /* "Development Editor" */,
+				4DCEC9143DA79897D00C6C5A /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		2459D29D9EE7B5F329122A2D /* Build configuration list for PBXNativeTarget "FPSProject" */ = {
+		82184C5B7172AFF3FB650F26 /* Build configuration list for PBXNativeTarget "FPSProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE44394A18E959C42BBEBEFF /* "DebugGame" */,
-				EFD148C11CF8B20C3EDE77CC /* "DebugGame Editor" */,
-				5AACFC86C15B542C182CDC60 /* "Development" */,
-				181F112C9732DD7BC53F1676 /* "Development Editor" */,
-				A66B889ABBA4B6213A43C6D6 /* "Shipping" */,
+				E4BC35B160AB4B693323EF89 /* "DebugGame" */,
+				6F4A5B651013E2B364CC57B4 /* "DebugGame Editor" */,
+				65C156C96E14F9B7AFFB4CF1 /* "Development" */,
+				0CCB07CD07761F34E8782202 /* "Development Editor" */,
+				62BCC0797442A3C5762BFEC9 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		54116F3CA20FD35C7A981F82 /* Build configuration list for PBXNativeTarget "FPSProject_Index" */ = {
+		19CE69E876A40D16A3791226 /* Build configuration list for PBXNativeTarget "FPSProject_Index" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D34BA1DE5B4661355613CFF1 /* "DebugGame" */,
-				E4BC35B160AB4B693323EF89 /* "DebugGame Editor" */,
-				6F4A5B651013E2B364CC57B4 /* "Development" */,
-				65C156C96E14F9B7AFFB4CF1 /* "Development Editor" */,
-				0CCB07CD07761F34E8782202 /* "Shipping" */,
+				5AACFC86C15B542C182CDC60 /* "DebugGame" */,
+				181F112C9732DD7BC53F1676 /* "DebugGame Editor" */,
+				A66B889ABBA4B6213A43C6D6 /* "Development" */,
+				CE3E28506AD33A7B69F48EF0 /* "Development Editor" */,
+				10F29B5D59F1EAC41941EDAD /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 638B1AB444DD3CD2F23D8E06 /* Project object */;
+	rootObject = FE44394A18E959C42BBEBEFF /* Project object */;
 }

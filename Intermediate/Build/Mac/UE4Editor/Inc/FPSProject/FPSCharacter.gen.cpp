@@ -17,10 +17,14 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	FPSPROJECT_API UClass* Z_Construct_UClass_AFPSCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_FPSProject();
+	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_Fire();
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward();
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_StartJump();
 	FPSPROJECT_API UFunction* Z_Construct_UFunction_AFPSCharacter_StopJump();
+	FPSPROJECT_API UClass* Z_Construct_UClass_AFPSProjectile_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
@@ -28,12 +32,29 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	{
 		UClass* Class = AFPSCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Fire", &AFPSCharacter::execFire },
 			{ "MoveForward", &AFPSCharacter::execMoveForward },
 			{ "MoveRight", &AFPSCharacter::execMoveRight },
 			{ "StartJump", &AFPSCharacter::execStartJump },
 			{ "StopJump", &AFPSCharacter::execStopJump },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_Fire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+				{ "ToolTip", "Function that handles firing projectiles." },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, "Fire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward()
 	{
@@ -129,6 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_FPSProject,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_AFPSCharacter_Fire, "Fire" }, // 1497030623
 				{ &Z_Construct_UFunction_AFPSCharacter_MoveForward, "MoveForward" }, // 1675964154
 				{ &Z_Construct_UFunction_AFPSCharacter_MoveRight, "MoveRight" }, // 3522398844
 				{ &Z_Construct_UFunction_AFPSCharacter_StartJump, "StartJump" }, // 946244656
@@ -141,6 +163,22 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				{ "ModuleRelativePath", "FPSCharacter.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
+				{ "Category", "Projectile" },
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+				{ "ToolTip", "Projectile class to spawn." },
+			};
+#endif
+			static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass = { UE4CodeGen_Private::EPropertyClass::Class, "ProjectileClass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFPSCharacter, ProjectileClass), Z_Construct_UClass_AFPSProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(NewProp_ProjectileClass_MetaData, ARRAY_COUNT(NewProp_ProjectileClass_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MuzzleOffset_MetaData[] = {
+				{ "Category", "Gameplay" },
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+				{ "ToolTip", "Gun muzzle's offset from the camera location." },
+			};
+#endif
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_MuzzleOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "MuzzleOffset", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(AFPSCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(NewProp_MuzzleOffset_MetaData, ARRAY_COUNT(NewProp_MuzzleOffset_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FPSMesh_MetaData[] = {
 				{ "Category", "Mesh" },
@@ -160,6 +198,8 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FPSCameraComponent = { UE4CodeGen_Private::EPropertyClass::Object, "FPSCameraComponent", RF_Public|RF_Transient|RF_MarkAsNative, 0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AFPSCharacter, FPSCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(NewProp_FPSCameraComponent_MetaData, ARRAY_COUNT(NewProp_FPSCameraComponent_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileClass,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleOffset,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FPSMesh,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FPSCameraComponent,
 			};
@@ -181,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 3266313922);
+	IMPLEMENT_CLASS(AFPSCharacter, 1674342486);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFPSCharacter(Z_Construct_UClass_AFPSCharacter, &AFPSCharacter::StaticClass, TEXT("/Script/FPSProject"), TEXT("AFPSCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFPSCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
