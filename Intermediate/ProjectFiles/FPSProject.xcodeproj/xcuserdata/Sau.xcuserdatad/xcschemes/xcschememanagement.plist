@@ -9,30 +9,20 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>FPSProject_Build.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>FPSProject_Index.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C88C46E690AC6EAF9C9F8E6</key>
+		<key>DF9C5F6A22AC6262874C01DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF693ACD35BDFB168A3D87BC</key>
+		<key>FE44394A18E959C42BBEBEFF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7967356EE9CC5667D3C6741</key>
+		<key>D34BA1DE5B4661355613CFF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
